@@ -1,6 +1,6 @@
 import React, { Fragment, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { Link, useHistory } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import CartIcon from "../../Assets/icons/cart.svg";
 import Logo from "../../Assets/icons/logo.svg";
@@ -15,7 +15,7 @@ const Nav = () => {
   const dispatch = useDispatch();
   const showCart = useSelector((state) => state.uiReducer.cartIsVisible);
   const cartProduct = useSelector((state) => state.cartReducer.items);
-  const history = useHistory();
+  const navigate = useNavigate();
 
   // Trigger cart modal
   const showCartHandler = () => {
@@ -27,7 +27,7 @@ const Nav = () => {
   };
 
   const logoClickHandler = () => {
-    history.push("/");
+    navigate("/");
   };
 
   return (
@@ -45,12 +45,7 @@ const Nav = () => {
               <span></span>
               <span></span>
             </div>
-            <img
-              src={Logo}
-              alt="logo"
-              onClick={logoClickHandler}
-              className="Nav_bars__grjUK Nav_bars__grjUK"
-            />
+            <img src={Logo} alt="logo" onClick={logoClickHandler} />
           </div>
 
           <div className={Classes.nav_link}>
