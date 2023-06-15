@@ -25,7 +25,6 @@ const Instagram = styled(FaInstagram)`
 `;
 
 const Email = styled(MdEmail)`
-  font-size: 2em;
 `;
 
 const Footer = () => {
