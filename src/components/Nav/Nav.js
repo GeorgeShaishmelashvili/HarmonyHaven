@@ -1,6 +1,6 @@
 import React, { Fragment, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 
 import CartIcon from "../../Assets/icons/cart.svg";
 import Logo from "../../Assets/icons/logo.svg";
@@ -15,6 +15,7 @@ const Nav = () => {
   const dispatch = useDispatch();
   const showCart = useSelector((state) => state.uiReducer.cartIsVisible);
   const cartProduct = useSelector((state) => state.cartReducer.items);
+  const history = useHistory();
 
   // Trigger cart modal
   const showCartHandler = () => {
@@ -26,10 +27,7 @@ const Nav = () => {
   };
 
   const logoClickHandler = () => {
-    const element = document.querySelector(".Nav_bars__grjUK.Nav_bars__grjUK");
-    if (element) {
-      element.click();
-    }
+    history.push("/");
   };
 
   return (
