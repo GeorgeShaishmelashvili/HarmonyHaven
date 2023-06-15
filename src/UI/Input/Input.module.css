@@ -1,0 +1,45 @@
+ article {
+    margin-bottom: 20px;
+ }
+ .label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+.label label {
+    font-size: 12px;
+    letter-spacing: 0.21px;
+    line-height: 16.39px;
+    font-weight: 700;
+}
+
+.label p {
+    color: red;
+    font-size: 12px  ;
+    font-weight: 500;
+    margin: 0;
+}
+
+input{
+    width: 100%;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 19.12px;
+    letter-spacing: -0.25px;
+    padding: 18px 24px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(207, 207, 207);
+    border-image: initial;
+    border-radius: 8px;
+    transition: all 0.2s ease 0s;
+    outline: none;
+}
+
+input:focus {
+    border-color: #d87d4a;
+}
+
+.invalid input {
+    border: 2px solid red;
+}

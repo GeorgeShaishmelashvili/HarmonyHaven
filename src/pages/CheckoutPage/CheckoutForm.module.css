@@ -1,0 +1,48 @@
+.checkout-form {
+    background: rgb(255, 255, 255);
+    border-radius: 8px;
+    max-width: 50rem;
+    min-width: 23rem;
+    width: 100%;
+    padding: 4.8rem;
+}
+
+h6 {
+    color:#d87d4a;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 25px;
+    letter-spacing: 0.93px;
+    margin-bottom: 16px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-column-gap: 2rem;
+    grid-row-gap: 1rem;
+}
+
+.radio-btn {
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(207, 207, 207);
+    border-radius: 8px;
+    margin-bottom: 24px;
+    padding: 18px 24px;
+}
+
+.radio-btn:hover {
+    border-color: #d87d4a;
+}
+
+.radio-btn input {
+    width: auto;
+}
+
+@media screen and (max-width:767px) {
+    .checkout-form {
+        width: 95%;
+        padding: 2rem 2rem;
+    }
+}

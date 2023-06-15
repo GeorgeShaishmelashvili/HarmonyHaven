@@ -1,0 +1,57 @@
+.list  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.list .image {
+    width: 64px;
+    height: 64px;
+}
+
+.list img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.list .cartBody {
+    flex: 50;
+    margin-left:20px;
+}
+
+.list .cartBody p {
+    font-weight: 600;
+    font-weight: 14px;
+}
+
+.list .cartBody p:nth-last-child(1) {
+    opacity: .5;
+}
+
+
+
+.buttonContainer {
+    display: flex;
+    align-items: center;
+    background-color: #f1f1f1;
+}
+
+.buttonContainer Button {
+    background-color: #f1f1f1;
+    color: black;
+    padding: 0rem 1rem;
+}
+
+.buttonContainer p {
+    padding: 10px 13px ;
+    margin: 0;
+}
+
+.btn-checkout {
+    background-color: none;
+}
+
+.btn-checkout p {
+    font-weight: 700;
+}

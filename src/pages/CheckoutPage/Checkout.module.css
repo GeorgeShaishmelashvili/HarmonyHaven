@@ -1,0 +1,25 @@
+
+
+.checkout {    
+    background: rgb(241, 241,241);
+}
+
+.checkoutSummary {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 10rem 0;   
+}
+
+.checkoutSummary h1 {
+    font-size: 2rem;
+}
+
+@media screen and (max-width:767px) {
+    .checkoutSummary {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        margin-top: 0;
+    }
+}

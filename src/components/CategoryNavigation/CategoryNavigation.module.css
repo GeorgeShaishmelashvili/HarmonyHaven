@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'manrope';
+}
+
+.hero {
+    background-image: url("../../Assets/home/desktop/image-hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    padding: 0 5rem;
+}
+
+.new-product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10rem 0;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+button {
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    font-weight: 700;
+    padding: 1rem;
+}
+
+button:hover {
+    background-color: #fbaf85;
+}
+
+/* third section */
+.section-zx9 {
+    display: flex;
+    background-color: #4ad8b9;
+    background-image: url('../../Assets/home/desktop/pattern-circles.svg');
+    background-repeat: no-repeat;
+    color: white;
+    margin: 0 5rem;
+    margin-bottom: 3rem;
+    padding: 5rem 7rem 1rem;
+}
+
+.section-zx9 .zx9-speaker-img img {
+    position: relative;
+    top: 3rem;
+    width: 50%;
+    height: 100%;
+}
+
+.section-zx9 button {
+    background-color: red;
+}
+
+.section-zx9 button:hover {
+    background-color: #252525;
+}
+
+/* zx7 section */
+.section-ZX7 {
+    background-image: url("../../Assets/home/desktop/image-speaker-zx7.jpg");
+    background-size: cover;
+    color: black;
+    margin: 0 5rem;
+    margin-bottom: 100px;
+    padding: 6rem 4rem;
+}
+
+.section-ZX7 button {
+    background-color: #dcdddd;
+    color: black;
+}
+
+.section-ZX7 button:hover {
+    background-color: black;
+    color: white;
+}
+
+.section-ZX7 h3 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+/* yx1-earphone section */
+.section-yx1 {
+    display: flex;
+    gap: 30px;
+    color: black;
+    margin: 0 5rem;
+    margin-bottom: 5rem;
+}
+
+.image-yx1 {
+    flex: 50;
+}
+
+.image-yx1 img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.yx1-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 50;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+}
+
+.yx1-content button {
+    background-color: #f1f1f1;
+    border: 1px solid black;
+    color: black;
+}
+
+.yx1-content button:hover {
+    background-color: black;
+    color: white;
+}
+
+.card_container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 0 auto;
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+    width: 85%;
+}
+
+.card_content > img {
+    position: relative;
+    top: 6rem;
+    width: 40%;
+    height: 50%;
+    display: block;
+    margin: auto;
+    object-fit: cover;
+}
+
+.card {
+    background-color: #f1f1f1;
+    color: black;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.card a {
+    color: #5c5b5b;
+    cursor: pointer;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 767px) {
+    .hero {
+        background-image: url("../../Assets/home/mobile/image-header.jpg");
+        background-size: cover;
+        padding: 0;
+    }
+
+    .new-product {
+        text-align: center;
+        padding: 10rem 0;
+    }
+
+    .new-product h1 {
+        font-size: 2.2rem;
+    }
+
+    .section-zx9 {
+        flex-direction: column;
+        align-items: center;
+        margin: 0 2rem;
+        padding: 1rem 1rem;
+    }
+
+    .section-zx9 .zx9-speaker-img {
+        width: 200px;
+        margin-bottom: 4rem;
+    }
+
+    .section-zx9 .zx9-speaker-img img {
+        width: 100%;
+    }
+
+    .zx9-speaker-content {
+        text-align: center;
+    }
+
+    .section-ZX7 {
+        background-image: url("../../Assets/home/mobile/image-speaker-zx7.jpg");
+        margin: 4rem 2rem;
+    }
+
+    .section-yx1 {
+        flex-direction: column;
+        margin: 2rem 2rem;
+    }
+
+    .section-yx1 .yx1-content {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .card_container {
+        flex-direction: column;
+        margin-top: 0;
+    }
+}

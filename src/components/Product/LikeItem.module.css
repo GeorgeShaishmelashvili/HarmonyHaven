@@ -1,0 +1,48 @@
+.likes {
+    margin: 0 5rem;
+    margin-bottom: 10rem;
+ }
+ 
+ .likes h2 {
+     font-size: 34px;
+     margin: 0 auto;
+     margin-bottom: 3rem;
+     width: 350px;
+ }
+
+ .likes-container {
+     display: flex;
+     gap: 20px;
+ }
+ 
+ .likes-image {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+ 
+ .likes-container img {
+     width: 100%;
+ }
+
+ /* phone responsiveness */
+
+@media screen and (max-width:767px) {
+    .likes {
+        margin-bottom: 0;
+    }
+   .likes-container {
+    flex-direction: column;
+   }
+
+   .likes h2 {
+    font-size: 24px;
+
+}
+
+   .likes-image {
+   margin-bottom: 30px;
+}
+
+   
+}

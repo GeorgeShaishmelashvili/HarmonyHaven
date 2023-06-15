@@ -1,0 +1,48 @@
+.gallery {
+    margin: 0 5rem;
+    margin-bottom: 10rem;
+}
+
+.img-container {
+    width: 100%;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 1fr 1.5fr;
+    grid-template-areas: 
+    "img1 img3"
+    "img2 img3";
+}
+
+.img-container img {
+    border-radius: 10px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.img-first {
+    grid-area: img1;
+    height: 100%;
+}
+
+.img-second {
+    grid-area: img2;
+    height: 100%;
+}
+.img-third {
+    grid-area: img3;
+}
+
+/* phone responsiveness */
+
+@media screen and (max-width:767px) {
+    .gallery {
+        margin: 0 2rem;
+    }
+    .img-container{
+      display: block;
+    }
+
+    .img-container img{
+        margin-bottom: 30px;
+      }
+}

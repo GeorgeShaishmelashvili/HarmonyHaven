@@ -1,0 +1,53 @@
+/* section best gear */
+.best-gear {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: black;
+    margin: 15rem 5rem;
+}
+
+.best-gear-content {
+    flex: 50;
+}
+
+.best-gear-content h1{
+    font-size: 2.5rem;
+}
+
+.best-gear-content h1 span {
+    color:red
+}
+
+.best-gear-content p {
+    font-size: 15px;
+    font-weight: 200;
+    line-height: 25px;
+    opacity: .5;
+}
+
+.best-gear-image {
+    flex: 50;
+}
+
+.best-gear-image img{
+    width: 100%;
+}
+
+/* phone responsiveness */
+
+@media screen and (max-width:767px) {
+    .best-gear {
+        flex-direction: column-reverse;
+        margin: 5rem 2rem;
+    }
+
+    .best-gear-content {
+        text-align: center;
+    }
+
+    .best-gear-content h1 {
+        font-size: 24px;
+    }
+    
+}

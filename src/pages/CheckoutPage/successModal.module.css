@@ -1,0 +1,64 @@
+.successBackdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 20;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.successFlex {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.successModal {
+    width: 450px ;
+    background-color: white;
+    padding: 3rem 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    z-index: 30;
+}
+
+.itemFlex{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4rem;
+   
+}
+
+.item {
+    flex: 60;
+    background: rgb(241, 241, 241);
+    border-radius: 8px 0px 0px 8px;
+    padding: 1rem 2rem;
+}
+
+.grandTotal {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex: 30;
+    color: white;
+    background-color: black;
+    border-radius: 0px 8px 8px 0px;
+    align-content: flex-end;
+    padding: 10px 5px;
+}
+
+.grandTotal p{
+    margin: 5px;
+}
+
+.grandTotal p:nth-of-type(1) {
+    opacity: .5;
+}
+
+@media screen and (max-width:767px) {
+    .successModal {
+        width: 95%;
+    }
+}
