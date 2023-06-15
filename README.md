@@ -27,9 +27,11 @@ A simple E-commerce website with a friendly interface where users can check and 
 
 - Clone Repository
   `git clone https://github.com/GeorgeShaishmelashvili/HarmonyHaven`
-- Install Dependencies:
+- Change directory to HarmonyHaven
+  `cd HarmonyHaven`
+- Install Dependencies
   `npm install`
 - Start Project
   `npm run start`
-- Open app in browser to test and view
+- Open the application in a browser and navigate to
   `http://localhost:3000/`
