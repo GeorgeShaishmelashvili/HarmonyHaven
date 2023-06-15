@@ -93,7 +93,7 @@ const CheckoutForm = (props) => {
       setPhoneNumberIsInvalid(false);
     } else {
       setPhoneNumberIsInvalid(true);
-      setPhoneError("Minimum required length is 9");
+      setPhoneError("Minimum required length is 5");
     }
   };
 
@@ -267,7 +267,7 @@ const CheckoutForm = (props) => {
         </div>
 
         <div className={classes.payment}>
-          <h6>PAYMENT DETAILS</h6>
+          <h6>PAAYMENT DETAILS</h6>
           <div className={classes["form-row"]}>
             <div>
               <p>Payment Method</p>
@@ -310,7 +310,7 @@ const CheckoutForm = (props) => {
             </div>
           ) : (
             <p>
-              The 'Cash on Delivery' option enables you to pay in cash when our
+              The ‘Cash on Delivery’ option enables you to pay in cash when our
               delivery courier arrives at your residence. Just make sure your
               address is correct so that your order will not be cancelled.
             </p>
