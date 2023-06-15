@@ -5,9 +5,9 @@ import CheckoutDetails from "./CheckoutDetails";
 
 import classes from "./CheckoutForm.module.css";
 
-const CheckoutForm = (props) => {
+const CheckoutForm = (Props) => {
   const [payment, setPayment] = useState("emoney");
-  // RegEx for email validation
+  //regEx for email validation
   const validEmail = /^\w+([-]?\w+)*@\w+([-]?\w+)*(\.\w{2,3})+$/;
 
   const [userName, setUserName] = useState("");
@@ -15,7 +15,7 @@ const CheckoutForm = (props) => {
   const [phoneNumber, setPhoneNumber] = useState("");
   const [address, setAddress] = useState("");
   const [zipcode, setZipcode] = useState("");
-  const [city, setCity] = useState("");
+  const [city, setcity] = useState("");
   const [country, setCountry] = useState("");
 
   const [emailError, setEmailError] = useState("");
@@ -37,7 +37,7 @@ const CheckoutForm = (props) => {
 
   const emailChangeHandler = (event) => {
     setEmail(event.target.value);
-    setEmailIsInvalid(!event.target.value.match(validEmail));
+    setEmailIsInvalid(event.target.value.match(!validEmail));
   };
 
   const phoneChangeHandler = (event) => {
@@ -56,7 +56,7 @@ const CheckoutForm = (props) => {
   };
 
   const cityChangeHandler = (event) => {
-    setCity(event.target.value);
+    setcity(event.target.value);
     setCityIsInvalid(event.target.value.trim() === "");
   };
 
@@ -93,7 +93,7 @@ const CheckoutForm = (props) => {
       setPhoneNumberIsInvalid(false);
     } else {
       setPhoneNumberIsInvalid(true);
-      setPhoneError("Minimum required length is 5");
+      setPhoneError("min require length is 5");
     }
   };
 
@@ -138,32 +138,31 @@ const CheckoutForm = (props) => {
 
     if (addressIsInvalid === null || addressIsInvalid === true) {
       setAddressIsInvalid(true);
-      // setEmailError("Address cannot be empty");
+      // setEmailError("address cannot be empty");
     } else {
       setAddressIsInvalid(false);
     }
 
     if (zipcodeIsInvalid === null || zipcodeIsInvalid === true) {
       setZipcodeIsInvalid(true);
-      // setEmailError("Zip code cannot be empty");
+      // setEmailError("Email cannot be empty");
     } else {
       setZipcodeIsInvalid(false);
     }
 
     if (cityIsInvalid === null || cityIsInvalid === true) {
       setCityIsInvalid(true);
-      setEmailError("City cannot be empty");
+      setEmailError("Email cannot be empty");
     } else {
       setCityIsInvalid(false);
     }
 
     if (countryIsInvalid === null || countryIsInvalid === true) {
       setCountryIsInvalid(true);
-      // setEmailError("Country cannot be empty");
+      // setEmailError("Email cannot be empty");
     } else {
       setCountryIsInvalid(false);
     }
-
     if (
       userNameIsInvalid === false &&
       emailIsInvalid === false &&
@@ -174,7 +173,7 @@ const CheckoutForm = (props) => {
       countryIsInvalid === false
     ) {
       setFormIsValid(true);
-      props.onShowModal(formIsValid);
+      Props.onShowModal(formIsValid);
     } else {
       setFormIsValid(false);
     }
@@ -186,12 +185,14 @@ const CheckoutForm = (props) => {
         <h1>CHECKOUT</h1>
 
         <div className={classes.billing}>
+          {" "}
           <h6>BILLING DETAILS</h6>
           <div className={classes["form-row"]}>
+            {" "}
             <Input
               type="text"
               label="Name"
-              placeholder="George Shaishmelashvili"
+              Placeholder="George Shaishmelashvili"
               value={userName}
               onChange={userNameChangeHandler}
               onBlur={validateUsernameHandler}
@@ -201,7 +202,7 @@ const CheckoutForm = (props) => {
             <Input
               type="email"
               label="Email Address"
-              placeholder="g.shaishmela@gmail.com"
+              Placeholder="g.shaishmela@gmail.com"
               value={email}
               onChange={emailChangeHandler}
               onBlur={validateEmailHandler}
@@ -211,7 +212,7 @@ const CheckoutForm = (props) => {
           </div>
           <Input
             type="phone"
-            placeholder="+995-574-068-569"
+            Placeholder="+995-574-068-569"
             label="Phone Number"
             value={phoneNumber}
             onChange={phoneChangeHandler}
@@ -222,10 +223,11 @@ const CheckoutForm = (props) => {
         </div>
 
         <div className={classes.shipping}>
+          {" "}
           <h6>SHIPPING INFO</h6>
           <Input
-            placeholder="Vasadze Street"
-            label="Address"
+            Placeholder="Vasadze Street"
+            label="Adress"
             value={address}
             onChange={addressChangeHandler}
             onBlur={validateAddressHandler}
@@ -234,40 +236,40 @@ const CheckoutForm = (props) => {
           />
           <div className={classes["form-row"]}>
             <Input
-              placeholder="0179"
+              Placeholder="0179"
               label="Zip code"
               value={zipcode}
               onChange={zipcodeChangeHandler}
               onBlur={validateZipcodeHandler}
               valueIsInvalid={zipcodeIsInvalid}
-              errorText="Zip code cannot be empty"
+              errorText="zipcode cannot be empty"
             />
             <Input
-              placeholder="Tbilisi"
+              Placeholder="Tbilisi"
               label="City"
               value={city}
               onChange={cityChangeHandler}
               onBlur={validateCityHandler}
               valueIsInvalid={cityIsInvalid}
-              errorText="City cannot be empty"
+              errorText="city cannot be empty"
             />
           </div>
           <div className={classes["form-row"]}>
             <Input
-              placeholder="Georgia"
+              Placeholder="Georgia"
               label="Country"
               value={country}
               onChange={countryChangeHandler}
               onBlur={validateCountryHandler}
               valueIsInvalid={countryIsInvalid}
-              errorText="Country cannot be empty"
+              errorText="country cannot be empty"
             />
             <div style={{ height: "8px" }} className={classes.special}></div>
           </div>
         </div>
 
         <div className={classes.payment}>
-          <h6>PAAYMENT DETAILS</h6>
+          <h6>PAYMENT DETAILS</h6>
           <div className={classes["form-row"]}>
             <div>
               <p>Payment Method</p>
@@ -281,7 +283,7 @@ const CheckoutForm = (props) => {
                   value="emoney"
                   onChange={radioChangeHandler}
                   checked={payment === "emoney"}
-                />
+                />{" "}
                 <label htmlFor="emoney" data-check={payment === "emoney"}>
                   e-money
                 </label>
@@ -294,7 +296,7 @@ const CheckoutForm = (props) => {
                   value="ecash"
                   onChange={radioChangeHandler}
                   checked={payment === "ecash"}
-                />
+                />{" "}
                 <label htmlFor="ecash" data-check={payment === "ecash"}>
                   Cash on Delivery
                 </label>
