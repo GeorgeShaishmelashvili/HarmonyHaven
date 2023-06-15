@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { Link } from "react-router-dom";
 
 import classes from "./CategoryNavigation.module.css";
@@ -10,37 +10,69 @@ import arrow from "../../Assets/shared/desktop/icon-arrow-right.svg";
 
 const CategoryNavigation = () => {
   return (
-    <div className={classes.container}>
-      <Link to="/headphone" className={classes.card}>
-        <img src={headphone} alt="headphone" className={classes.image} />
-        <div className={classes.overlay}>
-          <h2 className={classes.title}>HEADPHONES</h2>
-          <p className={classes.shop}>
-            SHOP <img src={arrow} alt="arrow" className={classes.arrow} />
-          </p>
-        </div>
-      </Link>
+    <Fragment>
+      <section className={classes.card_container}>
+        <Link
+          to="/headphone"
+          onClick={() => {
+            window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+          }}
+        >
+          <div className={classes.card_content}>
+            <img src={headphone} alt="headphone" />
+            <div className={classes.card}>
+              <h2>HEADPHONES</h2>
+              <p>
+                SHOP{" "}
+                <span>
+                  <img src={arrow} alt="arrow" />
+                </span>
+              </p>
+            </div>
+          </div>
+        </Link>
 
-      <Link to="/speaker" className={classes.card}>
-        <img src={speaker} alt="speaker" className={classes.image} />
-        <div className={classes.overlay}>
-          <h2 className={classes.title}>SPEAKERS</h2>
-          <p className={classes.shop}>
-            SHOP <img src={arrow} alt="arrow" className={classes.arrow} />
-          </p>
-        </div>
-      </Link>
+        <Link
+          to="/speaker"
+          onClick={() => {
+            window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+          }}
+        >
+          <div className={classes.card_content}>
+            <img src={speaker} alt="speaker" />
+            <div className={classes.card}>
+              <h2>SPEAKERS</h2>
+              <p>
+                SHOP{" "}
+                <span>
+                  <img src={arrow} alt="arrow" />
+                </span>
+              </p>
+            </div>
+          </div>
+        </Link>
 
-      <Link to="/earphone" className={classes.card}>
-        <img src={earphone} alt="earphone" className={classes.image} />
-        <div className={classes.overlay}>
-          <h2 className={classes.title}>EARPHONES</h2>
-          <p className={classes.shop}>
-            SHOP <img src={arrow} alt="arrow" className={classes.arrow} />
-          </p>
-        </div>
-      </Link>
-    </div>
+        <Link
+          to="/earphone"
+          onClick={() => {
+            window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+          }}
+        >
+          <div className={classes.card_content}>
+            <img src={earphone} alt="earphone" />
+            <div className={classes.card}>
+              <h2>EARPHONES</h2>
+              <p>
+                SHOP{" "}
+                <span>
+                  <img src={arrow} alt="arrow" />
+                </span>
+              </p>
+            </div>
+          </div>
+        </Link>
+      </section>
+    </Fragment>
   );
 };
 
