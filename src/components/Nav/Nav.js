@@ -1,5 +1,4 @@
 import React, { Fragment, useState } from "react";
-
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 
@@ -17,13 +16,20 @@ const Nav = () => {
   const showCart = useSelector((state) => state.uiReducer.cartIsVisible);
   const cartProduct = useSelector((state) => state.cartReducer.items);
 
-  //trigger cart modal
+  // Trigger cart modal
   const showCartHandler = () => {
     dispatch(uiAction.toggleCart());
   };
 
   const scrollUp = () => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  };
+
+  const logoClickHandler = () => {
+    const element = document.querySelector(".Nav_bars__grjUK.Nav_bars__grjUK");
+    if (element) {
+      element.click();
+    }
   };
 
   return (
@@ -41,7 +47,12 @@ const Nav = () => {
               <span></span>
               <span></span>
             </div>
-            <img src={Logo} alt="logo" />
+            <img
+              src={Logo}
+              alt="logo"
+              onClick={logoClickHandler}
+              className="Nav_bars__grjUK Nav_bars__grjUK"
+            />
           </div>
 
           <div className={Classes.nav_link}>
