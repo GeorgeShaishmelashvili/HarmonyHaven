@@ -36,6 +36,11 @@ button {
   align-self: flex-start; /* Align the button to the start of the container */
 }
 
+.new-product button {
+  display: inline-block;
+  width: fit-content;
+}
+
 button:hover {
   background-color: #fbaf85;
 }
@@ -142,7 +147,8 @@ button:hover {
   }
 }
 
-/* Mobile Responsiveness */
+/* mobile responiveness */
+
 @media screen and (max-width: 767px) {
   .hero {
     background-image: url("../../Assets/home/mobile/image-header.jpg");
