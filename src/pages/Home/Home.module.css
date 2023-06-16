@@ -27,12 +27,14 @@ h1 {
 }
 
 button {
-    background-color: red;
-    color: white;
-    cursor: pointer;
-    font-weight: 700;
-    padding: 1rem;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  font-weight: 700;
+  padding: 1rem;
+  display: inline-block;
 }
+
 
 button:hover {
     background-color: #fbaf85;;
