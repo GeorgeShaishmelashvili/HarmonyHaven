@@ -16,16 +16,10 @@ body {
 }
 
 .new-product {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 10rem 0;
-}
-
-.new-product button {
-  margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+    padding: 10rem 0;
 }
 
 h1 {
@@ -33,11 +27,15 @@ h1 {
 }
 
 button {
-    background-color: red;
-    color: white;
-    cursor: pointer;
-    font-weight: 700;
-    padding: 1rem;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  font-weight: 700;
+  padding: 1rem;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 button:hover {
