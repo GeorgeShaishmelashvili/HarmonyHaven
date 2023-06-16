@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: 'manrope';
+  font-family: 'Manrope', sans-serif;
 }
 
 .hero {
@@ -27,23 +27,19 @@ h1 {
   font-size: 3rem;
 }
 
-button {
+.Home_new-product__E891- button {
   background-color: red;
   color: white;
   cursor: pointer;
   font-weight: 700;
   padding: 1rem;
-  align-self: flex-start; /* Align the button to the start of the container */
 }
 
-.new-product button {
-  display: inline-block;
-  width: fit-content;
-}
-
-button:hover {
+.Home_new-product__E891- button:hover {
   background-color: #fbaf85;
 }
+
+/* Rest of your CSS code... */
 
 /* third section */
 .section-zx9 {
@@ -57,21 +53,6 @@ button:hover {
   padding: 5rem 7rem 1rem;
 }
 
-.section-zx9 .zx9-speaker-img img {
-  position: relative;
-  top: 3rem;
-  width: 50%;
-  height: 100%;
-}
-
-.section-zx9 button {
-  background-color: red;
-}
-
-.section-zx9 button:hover {
-  background-color: #252525;
-}
-
 /* zx7 section */
 .section-ZX7 {
   background-image: url("../../Assets/home/desktop/image-speaker-zx7.jpg");
@@ -80,21 +61,6 @@ button:hover {
   margin: 0 5rem;
   margin-bottom: 100px;
   padding: 6rem 4rem;
-}
-
-.section-ZX7 button {
-  background-color: #dcdddd;
-  color: black;
-}
-
-.section-ZX7 button:hover {
-  background-color: black;
-  color: white;
-}
-
-.section-ZX7 h3 {
-  font-size: 2rem;
-  font-weight: 700;
 }
 
 /* yx1-earphone section */
@@ -147,8 +113,7 @@ button:hover {
   }
 }
 
-/* mobile responiveness */
-
+/* Mobile Responsiveness */
 @media screen and (max-width: 767px) {
   .hero {
     background-image: url("../../Assets/home/mobile/image-header.jpg");
