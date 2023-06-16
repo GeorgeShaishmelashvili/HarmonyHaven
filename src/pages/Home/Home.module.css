@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500&display=swap');
+
 * {
     box-sizing: border-box;
 }
@@ -16,11 +17,10 @@ body {
 }
 
 .new-product {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 10rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10rem 0;
 }
 
 h1 {
@@ -33,12 +33,11 @@ button {
     cursor: pointer;
     font-weight: 700;
     padding: 1rem;
-      margin-top: 2rem;
-  align-self: flex-start;
+    pointer-events: none;
 }
 
 button:hover {
-    background-color: #fbaf85;;
+    background-color: #fbaf85;
 }
 
 /* third section */
@@ -69,7 +68,7 @@ button:hover {
 }
 
 /* zx7 section */
-.section-ZX7{
+.section-ZX7 {
     background-image: url("../../Assets/home/desktop/image-speaker-zx7.jpg");
     background-size: cover;
     color: black;
@@ -88,7 +87,7 @@ button:hover {
     color: white;
 }
 
-.section-ZX7 h3{
+.section-ZX7 h3 {
     font-size: 2rem;
     font-weight: 700;
 }
@@ -122,7 +121,7 @@ button:hover {
 }
 
 .yx1-content button {
-    background-color:#f1f1f1 ;
+    background-color: #f1f1f1;
     border: 1px solid black;
     color: black;
 }
@@ -138,6 +137,7 @@ button:hover {
         gap: 20px;
         padding: 40px 10px 20px;
     }
+
     .section-zx9 .zx9-speaker-img img {
         width: 250px;
     }
@@ -145,7 +145,7 @@ button:hover {
 
 /* mobile responiveness */
 
-@media screen and (max-width:767px){
+@media screen and (max-width:767px) {
     .hero {
         background-image: url("../../Assets/home/mobile/image-header.jpg");
         background-size: cover;
@@ -155,10 +155,9 @@ button:hover {
     .new-product {
         text-align: center;
         padding: 10rem 0;
-        
     }
 
-    .new-product h1{
+    .new-product h1 {
         font-size: 2.2rem;
     }
 
@@ -172,16 +171,16 @@ button:hover {
     .section-zx9 .zx9-speaker-img {
         width: 200px;
         margin-bottom: 4rem;
-    } 
+    }
 
     .section-zx9 .zx9-speaker-img img {
         width: 100%;
     }
 
-    .zx9-speaker-content{
-       text-align: center;
+    .zx9-speaker-content {
+        text-align: center;
     }
-    
+
     .section-ZX7 {
         background-image: url("../../Assets/home/mobile/image-speaker-zx7.jpg");
         margin: 4rem 2rem;
@@ -196,5 +195,4 @@ button:hover {
         padding-top: 2rem;
         padding-bottom: 2rem;
     }
-
 }
