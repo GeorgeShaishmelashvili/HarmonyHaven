@@ -16,10 +16,16 @@ body {
 }
 
 .new-product {
-    display: flex;
-    flex-direction: column;
-   justify-content: center;
-    padding: 10rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10rem 0;
+}
+
+.new-product button {
+  margin-top: 2rem;
 }
 
 h1 {
